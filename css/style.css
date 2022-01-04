@@ -1,0 +1,202 @@
+:root {
+	--main-text-color: #333333;
+	--text-color: white;
+	--extra-color: #cacaca;
+	--style-color: #ff9900;
+	--extra-style-color: #e1670e;
+}
+
+html {
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+/* Любой элемент на странице */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+/* Все отображаемое на странице */
+
+body {
+	min-width: 320px;
+	margin: 0;
+	overflow-x: hidden;
+
+	
+	font-weight: normal;	
+	font-size: 16px;
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+    color: var(--main-text-color); 
+}
+
+.main {
+	transition: transform 0.4s ease-in-out;
+	transform: none;
+}
+
+.main.open-menu {
+	transform: translateX(100%);
+}
+
+/* Style for each section */
+.section {
+    margin-bottom: 105px;
+}
+
+.section__heading {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+/* Стили для кнопок и полей ввода */
+button {
+	padding: 0;
+	cursor: pointer;
+}
+
+button, input {
+	font: inherit;
+	outline: none;
+}
+
+.common__button {
+  height: 60px;
+  font-weight: 700;
+  color: var(--text-color);
+  background-color: var(--style-color);
+  border: none;
+}
+
+.common__button:hover {
+	background-color: rgba(255, 153, 0, 0.6);
+}
+
+.common__button:focus {
+	background-color: var(--extra-style-color);
+}
+
+/* Стили для всех изображений */
+
+img {
+	max-width: 100%;
+}
+
+/* Стили для всех ссылок */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Стили для ненумерованных списков */
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Стили для заголовков и параграфов */
+h1, h2, h3, p {
+	padding: 0;
+	margin: 0;
+  }
+
+/* Container */
+
+.container {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
+	max-width: 1800px;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+/* Style for accordion */
+.ui-widget-content {
+	border: none;
+}
+
+.ui-widget button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.ui-accordion-header-icon {
+	display: none;
+}
+
+.accordion__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+@media (max-width: 1800px) {
+
+	.container {
+		max-width: 1730px;
+	}
+
+}
+
+@media (max-width: 1064px) { 
+
+	.container {
+		padding: 0 50px;
+	}
+
+	.section {
+		margin-bottom: 64px;
+	}
+}
+
+@media (max-width: 788px) {
+	
+	.container {
+		padding: 0 49px;
+	}
+
+}
+
+@media (max-width: 576px) {
+	
+	.section__heading {
+		font-size: 40px;
+	}
+
+	.accordion__text {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	.section {
+		margin-bottom: 42px;
+	}
+
+	.section__heading {
+		font-size: 24px;
+	}
+
+}

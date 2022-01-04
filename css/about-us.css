@@ -1,0 +1,373 @@
+.about-us__heading {
+    margin-bottom: 27px;
+    padding-left: 2px;
+}
+.about-us__text {
+    margin-bottom: 42px;
+    max-width: 1235px;
+    
+    line-height: 32px;
+}
+
+.about-us__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+
+    background-image: url(../img/about-us/icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transform: translate(4.5px, 3px);
+}
+
+.about-us__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 622px;
+}
+
+.about-us__description {
+    display: flex;
+    align-items: flex-end;
+    width: 870px;
+    min-height: 100%;
+    margin-right: 29px;
+
+    background-image: url(../img/about-us/Rectangle\ 2.jpg);
+}
+
+.about-us__info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    min-height: 176px;
+    padding: 38px 68px 43px 54px;
+    font-weight: 700;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-us-info__text {
+    width: 497px;
+    margin-right: 75px;
+    
+    line-height: 32px;
+    color: var(--text-color);
+}
+
+.about-us__button {
+    width: 175px;
+    height: 60px;
+    padding: 18px 35px 20px;
+
+    color: var(--text-color);
+
+    background-color: transparent;
+    border: 3px solid var(--style-color);
+    transform: translate(1px, 2.5px);
+}
+
+.about-us__button:hover {
+    background-color: var(--style-color);
+    border: none;
+}
+
+.about-us__button:focus {
+    background-color: var(--extra-style-color);
+    border: none;
+}
+
+.about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 870px;
+}
+
+.about-us__item {
+    min-height: 295px;
+    padding: 70px 115px 65px 300px;
+
+    background-repeat: no-repeat;
+    border: 1px solid var(--extra-color);
+}
+
+.about-us__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.first-card {
+    background-image: url(../img/about-us/Group\ 25.svg);
+    background-position: 62px 72px;
+}
+
+.second-card {
+    background-image: url(../img/about-us/Group\ 24.svg);
+    background-position: 62px 55px;
+}
+
+.about-us-item__heading {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about-us-item__text {
+    line-height: 32px;
+}
+
+@media (max-width: 1800px) {
+
+    .about-us__text {
+        max-width: 100%;
+    }
+
+    .about-us__bottom {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+     .about-us__description {
+        min-height: 622px;
+        width: 870px;
+        margin-bottom: 50px;
+        margin-right: 0;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-us__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1064px) {
+
+    .about-us__heading {
+        margin-bottom: 31px;
+        padding-left: 0;
+    }
+
+    .about-us__text {
+        width: 100%;
+        margin-bottom: 59px;
+    }
+
+    .about-us__icon {
+        transform: translateY(3px);
+    }
+
+    .about-us__bottom {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .about-us__description {
+        min-height: 640px;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-right: 0;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-us__info {
+        padding: 41px 50px 40px 44px;
+    }
+
+    .about-us-info__text {
+        margin-right: auto;
+    }
+    
+    .about-us__button {
+        padding: 21px 35px 20px;
+        transform: none;
+    }
+
+    .about-us__list {
+        width: 100%;
+    }
+
+    .about-us__item {
+        width: 100%;
+        min-height: 295px;
+        padding: 70px 107px 65px 349px;
+    }
+
+    .about-us__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .first-card {
+        background-position: 111px 75px;
+    }
+
+    .second-card {
+        background-position: 111px 62px;
+    }
+}
+
+@media (max-width: 788px) {
+
+    .about-us__description {
+        min-height: 650px;
+        margin-bottom: 40px;
+        
+        background-position: -121px 0;
+    }
+
+    .about-us__info {
+        padding: 25px 29px;
+    }
+
+    .about-us-info__text {
+        width: 401px;
+        line-height: 31px;
+    }
+
+    .about-us__item {
+        min-height: 235px;
+        padding: 40px 35px 35px 178px;
+
+        background-size: 118px 103px;
+        background-position: 30px 66px;
+    }
+
+    .about-us-item__text {
+        line-height: 32px;
+    }
+
+    .second-card {
+        background-size: 117px 107px;
+        background-position: 30px 64px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .about-us__description {
+        max-height: 600px;
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .about-us__info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-us-info__text {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-us__item {
+        padding-left: 35px;
+        padding-top: 85px;
+        background-position: 35px 0;
+        background-size: 80px 80px;
+    }
+
+    .about-us-item__heading {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .about-us {
+        margin-bottom: 51px;
+    }
+
+    .about-us__heading {
+        margin-bottom: 4px;
+    }
+
+    .about-us__text {
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .about-us__description {
+        position: relative;
+        width: 100%;
+        min-height: 400px;
+        padding-top: 209px;
+
+        background-image: none;
+    }
+
+    .about-us__info::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        max-height: 200px;
+        background-image: url(../img/about-us/Rectangle\ 2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-us__info {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .about-us-info__text {
+        margin-bottom: 11px;
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 400;
+        color: var(--main-text-color);
+    }
+
+    .about-us__button {
+        width: 162px;
+        height: 40px;
+        padding: 12px 14px;
+        font-size: 12px;
+        color: var(--style-color);
+        border: 2px solid var(--style-color);
+    }
+
+    .about-us__item {
+        padding: 0;
+        padding-top: 63px;
+        background-size: 63px 63px;
+        background-position: 0 -4px;
+        border: none;
+    }
+
+    .about-us__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .about-us-item__heading {
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+
+    }
+
+    .about-us-item__text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
